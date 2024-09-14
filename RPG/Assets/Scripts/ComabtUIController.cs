@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor;
 namespace CombatUINamespace{
 
 public class CombatUI: MonoBehaviour{
@@ -14,6 +15,7 @@ public class CombatUI: MonoBehaviour{
     // Buttons in the array are in specified in the Canvas Inspector
     #region Declare UI Components
 
+    public GameObject EnemyPrefab;
     public Text UITextbox;
     public Button[] partyMemberButtons;
     public Button[] attackButtons;

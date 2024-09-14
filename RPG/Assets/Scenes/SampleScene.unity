@@ -545,6 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9989bcd52e1ad0458c6b55ed96fc5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyName: 
   attackDatabase: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
