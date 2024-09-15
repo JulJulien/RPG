@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using AttackDatabaseNamespace;
 
 public class Troll : EnemyBaseClass
 {

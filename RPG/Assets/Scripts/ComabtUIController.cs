@@ -1,26 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using BattleSystemNamespace;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using UnityEditor;
-namespace CombatUINamespace{
 
 public class CombatUI: MonoBehaviour{
+
+    public GameObject BattleSystem;
+    public GameObject AttackDatabase;
 
     // Initialize UI components
     // Buttons in the array are in specified in the Canvas Inspector
     #region Declare UI Components
 
-    public GameObject EnemyPrefab;
     public Text UITextbox;
     public Button[] partyMemberButtons;
     public Button[] attackButtons;
     public Button[] abilityButtons;
-
     public Button ChooseAttack;
     public Button ChooseAbility;
     public Button ChooseOther;
@@ -30,9 +29,12 @@ public class CombatUI: MonoBehaviour{
     public GameObject Panel_AttackAblitySelect;
 
     #endregion
-    
+
     void Start(){
         #region Button Listeners
+
+        BattleSystem = GameObject.Find("BattleSystem");
+        AttackDatabase = GameObject.Find("AttackDatabase");
 
         ChooseAttack.onClick.AddListener(() => OnChooseAttackButtonClick());
         ChooseAbility.onClick.AddListener(() => OnChooseAbilityButtonClick());
@@ -89,8 +91,6 @@ public class CombatUI: MonoBehaviour{
         Panel_PartySelect.SetActive(false);
         Panel_AttackAblitySelect.SetActive(false);
     }
-
-
     //Selected Character Portrait Button
     void OnSelectedPartyMemberButtonClick()
     {
@@ -101,7 +101,6 @@ public class CombatUI: MonoBehaviour{
         DeleteAbilityList();
         DeleteAttackList();
     }
-
     // Character selects Attack and Attacks are presented
     void OnChooseAttackButtonClick()
     {
@@ -112,7 +111,6 @@ public class CombatUI: MonoBehaviour{
         CreateAttackList();
         DeleteAbilityList();
     }
-
     // Character selects Abilities and Abilities are presented
     void OnChooseAbilityButtonClick()
     {
@@ -123,7 +121,6 @@ public class CombatUI: MonoBehaviour{
         CreateAbilityList();
         DeleteAttackList();
     }
-
     // Character selects Other and Other options are presented
     void OnChooseOtherButtonClick()
     {
@@ -137,13 +134,11 @@ public class CombatUI: MonoBehaviour{
         Debug.Log("Attack Button Clicked: " + clickedButton.name);
         // Implement your logic here
     }
-
     void OnAbilityButtonClick(Button clickedButton)
     {
         Debug.Log("Ability Button Clicked: " + clickedButton.name);
         // Implement your logic here
     }
-
     void CreateAttackList(){
         // Activate all attack buttons, or define a specific range of buttons you want to display
         foreach (Button btn in attackButtons)
@@ -152,7 +147,6 @@ public class CombatUI: MonoBehaviour{
             Debug.Log("Activated Attack Button: " + btn.name);
         }
     }
-
     void CreateAbilityList(){
         // Activate all ability buttons, or define a specific range of buttons you want to display
         foreach (Button btn in abilityButtons)
@@ -174,5 +168,4 @@ public class CombatUI: MonoBehaviour{
             btn.gameObject.SetActive(false);
         }
     }
-}
 }

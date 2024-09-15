@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-// Access Attacks in Attack DatabaseNamespace
-using AttackDatabaseNamespace;
-namespace BattleSystemNamespace{
 
 // This file controls the turn based combat for every enemy in the game.
 // This battle system is dynamic such that every enemy encounter can be controlled by this script.
@@ -14,10 +11,11 @@ namespace BattleSystemNamespace{
 
 public enum BattleState{START, PARTYTURN, ENEMYTURN, WON, LOST}
 
-
 public class BattleSystem : MonoBehaviour
 {
-
+    CombatUI combatUIController;
+    public GameObject Panel_EnemyPrefab;
+    public GameObject EnemyPrefab;
     public Text Text;
 
     public BattleState currentState;
@@ -55,16 +53,15 @@ public class BattleSystem : MonoBehaviour
     void PauseOverworld(){
         Time.timeScale = 0;
     }
-    void UnpauseOverwolrd(){
+    public void UnpauseOverwolrd(){
         Time.timeScale = 1;
     }
     void InitializeCombat(GameObject Enemy){
-        SetupEnemy(Enemy);
-        SetupParty();
-        CreateInitiativeOrder();
+        
     }
 
-    void SetupEnemy(GameObject Enemy){}
+    void SetupEnemy(GameObject Enemy){
+    }
     void SetupParty(){}
     void CreateInitiativeOrder(){}
     
@@ -96,5 +93,4 @@ public class BattleSystem : MonoBehaviour
      bool CheckIfGameOver(){
         return true;
     }
-}
 }

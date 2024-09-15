@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
-using AttackDatabaseNamespace;
 
 public class Conditions : MonoBehaviour 
 {
