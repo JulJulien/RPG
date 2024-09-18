@@ -13,7 +13,6 @@ public enum BattleState{START, PARTYTURN, ENEMYTURN, WON, LOST}
 
 public class BattleSystem : MonoBehaviour
 {
-    CombatUI combatUIController;
     public GameObject Panel_EnemyPrefab;
     public GameObject EnemyPrefab;
     public Text Text;
@@ -45,7 +44,7 @@ public class BattleSystem : MonoBehaviour
     void StartCombat(GameObject Enemy){
         Debug.Log("Battle Start");
         PauseOverworld();
-        InitializeCombat(Enemy);
+        InitializeCombat();
         PartyTurn(Enemy);
     }
     // Start Combat
@@ -56,14 +55,8 @@ public class BattleSystem : MonoBehaviour
     public void UnpauseOverwolrd(){
         Time.timeScale = 1;
     }
-    void InitializeCombat(GameObject Enemy){
-        
+    void InitializeCombat(){
     }
-
-    void SetupEnemy(GameObject Enemy){
-    }
-    void SetupParty(){}
-    void CreateInitiativeOrder(){}
     
     #endregion
 

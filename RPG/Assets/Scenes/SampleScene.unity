@@ -545,9 +545,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9989bcd52e1ad0458c6b55ed96fc5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BattleSystem: {fileID: 0}
   EnemyName: Troll
   AttackDatabase: {fileID: 0}
-  EnemyPrefab: {fileID: 6357286371487158029, guid: 39949a4553dbcd74fb641c384d98632c, type: 3}
+  EnemyPrefab: {fileID: 3576369689688562079, guid: e1062132cae660a43b4e34389ad1ab81, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

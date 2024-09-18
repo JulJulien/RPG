@@ -42,6 +42,7 @@ public class CombatUI: MonoBehaviour{
 
         SelectedPartyMemberButton.onClick.AddListener(() => OnSelectedPartyMemberButtonClick());
 
+        
         // When a party member button is clicked, call the OnPartyMemberButtonClick method
         foreach (Button btn in partyMemberButtons)
         {

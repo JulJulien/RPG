@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     private bool select;
     private bool pause;
     private bool sprint;
-
     public bool canMove = true;
     public float moveSpeed = 5f;
     public float sprintSpeedMultiplier =2f;
