@@ -13,11 +13,17 @@ public enum BattleState{START, PARTYTURN, ENEMYTURN, WON, LOST}
 
 public class BattleSystem : MonoBehaviour
 {
-    public GameObject Panel_EnemyPrefab;
+    public Transform EnemyStation;
     public GameObject EnemyPrefab;
     public Text Text;
 
     public BattleState currentState;
+
+    void Start()
+    {
+        currentState = BattleState.START;
+        SetState(currentState, EnemyPrefab);
+    }
 
     public void SetState(BattleState currentState, GameObject Enemy)
     {
@@ -43,23 +49,16 @@ public class BattleSystem : MonoBehaviour
 
     void StartCombat(GameObject Enemy){
         Debug.Log("Battle Start");
-        PauseOverworld();
-        InitializeCombat();
+        SetupBattle();
         PartyTurn(Enemy);
     }
     // Start Combat
-    #region 
-    void PauseOverworld(){
-        Time.timeScale = 0;
-    }
-    public void UnpauseOverwolrd(){
-        Time.timeScale = 1;
-    }
-    void InitializeCombat(){
-    }
-    
-    #endregion
 
+    void SetupBattle(){
+        Debug.Log("Battle Start");
+        Instantiate(EnemyPrefab, EnemyStation);
+        Debug.Log("Enemy Spawned");
+    }
     void PartyTurn(GameObject Enemy){
         
         Debug.Log("Players turn");
@@ -68,22 +67,12 @@ public class BattleSystem : MonoBehaviour
 
     void EnemyTurn(GameObject Enemy){
         Debug.Log("Enemy turn");
-        
-        if(CheckIfGameOver()){
-            EndBattle(Enemy);
-        }
-        else{
-            SetState(BattleState.PARTYTURN, Enemy);;
-        }
+
     }
 
     void EndBattle(GameObject Enemy){
         Debug.Log("Encounter End: You Loose");
-        UnpauseOverwolrd();
 
     }
 
-     bool CheckIfGameOver(){
-        return true;
-    }
 }

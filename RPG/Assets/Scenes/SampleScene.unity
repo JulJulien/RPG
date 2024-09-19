@@ -398,8 +398,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093366670}
-  - component: {fileID: 2093366669}
-  - component: {fileID: 2093366674}
   - component: {fileID: 2093366671}
   - component: {fileID: 2093366673}
   m_Layer: 0
@@ -409,18 +407,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2093366669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093366668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd30b6802f2a46748bba83c4b73d83ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2093366670
 Transform:
   m_ObjectHideFlags: 0
@@ -533,22 +519,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2093366674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093366668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9989bcd52e1ad0458c6b55ed96fc5aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BattleSystem: {fileID: 0}
-  EnemyName: Troll
-  AttackDatabase: {fileID: 0}
-  EnemyPrefab: {fileID: 3576369689688562079, guid: e1062132cae660a43b4e34389ad1ab81, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
