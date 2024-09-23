@@ -57,7 +57,7 @@ public class BattleSystem : MonoBehaviour
     }
     void InitializeCombat(){
     }
-    
+        
     #endregion
 
     void PartyTurn(GameObject Enemy){
