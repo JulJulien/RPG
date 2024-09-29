@@ -19,17 +19,14 @@ public class BattleSystem : MonoBehaviour
 
     public BattleState currentState;
 
-<<<<<<< HEAD
+
     void Start(){
         SetupBattle();
     }
 
     void SetupBattle(){
         Debug.Log("SetupBattle");
-        Instantiate(EnemyPrefab, PanelEnemyPrefab.transform, false);
     }
-=======
->>>>>>> parent of 4cd096b (Enemy Prefab Made)
     public void SetState(BattleState currentState, GameObject Enemy)
     {
         Debug.Log("StateSet");
