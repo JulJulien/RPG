@@ -1667,6 +1667,9 @@ RectTransform:
 =======
   - {fileID: 351335508}
   - {fileID: 928502389}
+<<<<<<< HEAD
+>>>>>>> parent of 4cd096b (Enemy Prefab Made)
+=======
 >>>>>>> parent of 4cd096b (Enemy Prefab Made)
   - {fileID: 1602618550}
   - {fileID: 373642814}
@@ -5247,7 +5250,11 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 276.96323, y: -340.5026}
+=======
+  m_AnchoredPosition: {x: 276.96323, y: -340.50262}
+>>>>>>> parent of 4cd096b (Enemy Prefab Made)
 =======
   m_AnchoredPosition: {x: 276.96323, y: -340.50262}
 >>>>>>> parent of 4cd096b (Enemy Prefab Made)
@@ -5443,10 +5450,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   EnemyStation: {fileID: 218469391}
   EnemyPrefab: {fileID: 4601140941933091605, guid: 6b47597d3e0c7d5488b606fdecd1582a, type: 3}
 =======
   Panel_EnemyPrefab: {fileID: 351335507}
+=======
+  Panel_EnemyPrefab: {fileID: 0}
+>>>>>>> parent of 4cd096b (Enemy Prefab Made)
 =======
   Panel_EnemyPrefab: {fileID: 0}
 >>>>>>> parent of 4cd096b (Enemy Prefab Made)
