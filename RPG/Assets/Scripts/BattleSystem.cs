@@ -13,20 +13,37 @@ public enum BattleState{START, PARTYTURN, ENEMYTURN, WON, LOST}
 
 public class BattleSystem : MonoBehaviour
 {
+<<<<<<< HEAD
     public Transform EnemyStation;
+=======
+    public GameObject PanelEnemyPrefab;
+>>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
     public GameObject EnemyPrefab;
-    public Text Text;
 
     public BattleState currentState;
 
+<<<<<<< HEAD
     void Start()
     {
         currentState = BattleState.START;
         SetState(currentState, EnemyPrefab);
     }
 
+=======
+    SetState = BattleState.START;
+
+    void Start(){
+        SetupBattle();
+    }
+
+    void SetupBattle(){
+        Debug.Log("SetupBattle");
+        Instantiate(EnemyPrefab, PanelEnemyPrefab);
+    }
+>>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
     public void SetState(BattleState currentState, GameObject Enemy)
     {
+        EnemyPrefab = Enemy;
         Debug.Log("StateSet");
         switch (currentState)
         {
@@ -35,20 +52,19 @@ public class BattleSystem : MonoBehaviour
                 StartCombat(Enemy);
                 break;
             case BattleState.PARTYTURN:
-                PartyTurn(Enemy);
                 break;
             case BattleState.ENEMYTURN:
-                EnemyTurn(Enemy);
                 break;
             case BattleState.WON:
+                break;
             case BattleState.LOST:
-                //EndBattle(Enemy);
                 break;
         }
     }
 
     void StartCombat(GameObject Enemy){
         Debug.Log("Battle Start");
+<<<<<<< HEAD
         SetupBattle();
         PartyTurn(Enemy);
     }
@@ -75,4 +91,8 @@ public class BattleSystem : MonoBehaviour
 
     }
 
+=======
+    }
+  
+>>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
 }

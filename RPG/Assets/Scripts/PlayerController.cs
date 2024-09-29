@@ -39,24 +39,4 @@ public class PlayerController : MonoBehaviour
             transform.position += (Vector3)playerInput * currentSpeed * Time.deltaTime;
             //Debug.Log("Player Position Before: " + transform.position);
     }
-
-    // Enemy Collision Detection
-    void OnTriggerEnter2D(Collider2D enemyObject)
-    {
-        if (enemyObject.CompareTag("Enemy"))
-        {
-            Debug.Log("Player has entered an enemy's trigger");
-            SceneManager.LoadScene("CombatUI", LoadSceneMode.Single);
-            Debug.Log(enemyObject.name);
-            StartState(enemyObject);
-            Debug.Log("Called Set State");
-             
-        }
-    }
-
-    public void StartState(Collider2D enemyObject){
-        BattleSystem battleSystemInstance = new BattleSystem();
-        battleSystemInstance.SetState(BattleState.START, enemyObject.gameObject);
-        Debug.Log("CallSetState complete");
-    }
 }

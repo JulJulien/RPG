@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 2093366670}
   - component: {fileID: 2093366671}
   - component: {fileID: 2093366673}
+  - component: {fileID: 2093366674}
   m_Layer: 0
   m_Name: Enemy234
   m_TagString: Enemy
@@ -519,6 +520,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
+=======
+--- !u!114 &2093366674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093366668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40acfa6814a50164299f06e5c8dbb971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 1031011537950456581, guid: 54dfd0a88ee8f27438a8c9a1b466421d, type: 3}
+>>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

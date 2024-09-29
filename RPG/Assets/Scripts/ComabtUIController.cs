@@ -10,7 +10,6 @@ using UnityEditor;
 public class CombatUI: MonoBehaviour{
 
     public GameObject BattleSystem;
-    public GameObject AttackDatabase;
 
     // Initialize UI components
     // Buttons in the array are in specified in the Canvas Inspector
@@ -34,7 +33,6 @@ public class CombatUI: MonoBehaviour{
         #region Button Listeners
 
         BattleSystem = GameObject.Find("BattleSystem");
-        AttackDatabase = GameObject.Find("AttackDatabase");
 
         ChooseAttack.onClick.AddListener(() => OnChooseAttackButtonClick());
         ChooseAbility.onClick.AddListener(() => OnChooseAbilityButtonClick());
