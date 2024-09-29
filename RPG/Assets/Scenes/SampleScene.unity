@@ -549,9 +549,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   EnemyPrefab: {fileID: 1031011537950456581, guid: 54dfd0a88ee8f27438a8c9a1b466421d, type: 3}
 >>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
 =======
+=======
+>>>>>>> parent of 4cd096b (Enemy Prefab Made)
 =======
 >>>>>>> parent of 4cd096b (Enemy Prefab Made)
   BattleSystem: {fileID: 0}
@@ -559,6 +562,9 @@ MonoBehaviour:
   AttackDatabase: {fileID: 0}
   EnemyPrefab: {fileID: 3576369689688562079, guid: e1062132cae660a43b4e34389ad1ab81, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 4cd096b (Enemy Prefab Made)
+=======
 >>>>>>> parent of 4cd096b (Enemy Prefab Made)
 =======
 >>>>>>> parent of 4cd096b (Enemy Prefab Made)

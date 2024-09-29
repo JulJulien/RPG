@@ -19,6 +19,7 @@ public class BattleSystem : MonoBehaviour
 
     public BattleState currentState;
 
+<<<<<<< HEAD
 
     void Start(){
         SetupBattle();
@@ -27,6 +28,8 @@ public class BattleSystem : MonoBehaviour
     void SetupBattle(){
         Debug.Log("SetupBattle");
     }
+=======
+>>>>>>> parent of 4cd096b (Enemy Prefab Made)
     public void SetState(BattleState currentState, GameObject Enemy)
     {
         Debug.Log("StateSet");
