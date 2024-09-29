@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:RPG/Assets/Prefabs/Enemy_Template.prefab.meta
 <<<<<<<< HEAD:RPG/Assets/Prefabs/Enemy.prefab.meta
 guid: 24a3d312537cecc468311877f1f3db8e
 ========
 guid: 83fa961623c4e464aaf66bb25c4f123e
 >>>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15:RPG/Assets/Prefabs/Enemy_Template.prefab.meta
+=======
+guid: 63c43ba3ae05b554a853187f373f2149
+>>>>>>> parent of 4cd096b (Enemy Prefab Made):RPG/Assets/Prefabs/Enemy Parent Prefab.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
