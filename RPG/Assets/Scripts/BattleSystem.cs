@@ -13,24 +13,10 @@ public enum BattleState{START, PARTYTURN, ENEMYTURN, WON, LOST}
 
 public class BattleSystem : MonoBehaviour
 {
-<<<<<<< HEAD
-    public Transform EnemyStation;
-=======
     public GameObject PanelEnemyPrefab;
->>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
     public GameObject EnemyPrefab;
 
     public BattleState currentState;
-
-<<<<<<< HEAD
-    void Start()
-    {
-        currentState = BattleState.START;
-        SetState(currentState, EnemyPrefab);
-    }
-
-=======
-    SetState = BattleState.START;
 
     void Start(){
         SetupBattle();
@@ -38,9 +24,8 @@ public class BattleSystem : MonoBehaviour
 
     void SetupBattle(){
         Debug.Log("SetupBattle");
-        Instantiate(EnemyPrefab, PanelEnemyPrefab);
+        Instantiate(EnemyPrefab, PanelEnemyPrefab.transform, false);
     }
->>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
     public void SetState(BattleState currentState, GameObject Enemy)
     {
         EnemyPrefab = Enemy;
@@ -64,35 +49,6 @@ public class BattleSystem : MonoBehaviour
 
     void StartCombat(GameObject Enemy){
         Debug.Log("Battle Start");
-<<<<<<< HEAD
-        SetupBattle();
-        PartyTurn(Enemy);
-    }
-    // Start Combat
-
-    void SetupBattle(){
-        Debug.Log("Battle Start");
-        Instantiate(EnemyPrefab, EnemyStation);
-        Debug.Log("Enemy Spawned");
-    }
-    void PartyTurn(GameObject Enemy){
-        
-        Debug.Log("Players turn");
-        SetState(BattleState.ENEMYTURN, Enemy);
-    }
-
-    void EnemyTurn(GameObject Enemy){
-        Debug.Log("Enemy turn");
-
-    }
-
-    void EndBattle(GameObject Enemy){
-        Debug.Log("Encounter End: You Loose");
-
-    }
-
-=======
     }
   
->>>>>>> 4cd096b1c6ba2999fadeec7f0a9226cc712d3f15
 }
